@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/about_img"
+            android:layout_marginTop="50dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_account_circle_24"></ImageView>
+
+        <TextView
+            android:id="@+id/about_contacts"
+            android:layout_below="@+id/about_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Contacts"
+            android:layout_centerHorizontal="true"></TextView>
+
+        <TextView
+            android:id="@+id/about_version"
+            android:layout_below="@+id/about_contacts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Version 10.0.5.640"
+            android:layout_centerHorizontal="true"></TextView>
+
+        <TextView
+            android:id="@+id/about_dev_name"
+            android:layout_below="@+id/about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Saw Eh Dar Ler"
+            android:layout_centerHorizontal="true"></TextView>
+
+        <TextView
+            android:id="@+id/licences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Open Source Licences"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"></TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

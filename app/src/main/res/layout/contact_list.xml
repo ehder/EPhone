@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="20dp"
+    android:elevation="20dp"
+    android:outlineSpotShadowColor="#000000"
+    android:outlineProvider="background"
+    android:layout_margin="4dp"
+    android:id="@+id/contact_layout">
+
+    <RelativeLayout
+        android:background="#00BCD4"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/contact_image"
+            android:layout_width="50dp"
+            android:background="@drawable/ic_baseline_account_circle_24"
+            android:layout_height="match_parent" >
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/contact_image"
+            android:background="@drawable/contacts_bg">
+
+            <RelativeLayout
+                android:id="@+id/name_layout"
+                android:layout_width="250dp"
+                android:layout_height="35dp">
+
+                <TextView
+                    android:id="@+id/contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:lines="1"
+                    android:text="Saw Eh Dar Ler"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/contact_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/contact_name"
+                    android:layout_marginLeft="13dp"
+                    android:text="09799623994"
+                    android:textSize="11sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_toRightOf="@id/name_layout"
+                android:layout_width="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/contact_phone_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/white_phone_call"></ImageView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

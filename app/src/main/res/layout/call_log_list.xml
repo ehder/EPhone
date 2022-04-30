@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="20dp"
+    android:elevation="20dp"
+    android:outlineSpotShadowColor="#000000"
+    android:outlineProvider="background"
+    android:layout_margin="4dp"
+    android:id="@+id/call_log_layout">
+
+    <RelativeLayout
+        android:background="#E6E4E4"
+        android:paddingRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/call_log_image"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_account_circle_24"></ImageView>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/call_log_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="1dp"
+            android:background="@drawable/contacts_bg"
+            android:layout_centerInParent="true" >
+
+
+            <RelativeLayout
+                android:id="@+id/name_and_duration"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                >
+
+
+                <TextView
+                    android:id="@+id/call_name"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:lines="1"
+                    android:text="Saw Eh Dar Ler"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/call_duration"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/call_name"
+                    android:text="20"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_below="@+id/name_and_duration"
+                android:id="@+id/call_number"
+                android:layout_marginLeft="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="09799623994"/>
+
+            <TextView
+                android:id="@+id/call_date"
+                android:layout_width="120dp"
+                android:layout_height="33dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@id/name_and_duration"
+                android:text="09799623994"
+                android:textSize="11sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

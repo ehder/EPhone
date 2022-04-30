@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/phone_fragment">
+
+    <fragment
+        android:id="@+id/phone_fragment"
+        android:name="com.der.ephone.fragments.PhoneFragment"
+        android:label="fragment_phone"
+        tools:layout="@layout/fragment_phone" />
+    <fragment
+        android:id="@+id/contact_fragment"
+        android:name="com.der.ephone.fragments.ContactFragment"
+        android:label="fragment_contact"
+        tools:layout="@layout/fragment_contact" >
+    </fragment>
+    <fragment
+        android:id="@+id/favorite_fragment"
+        android:name="com.der.ephone.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <dialog
+        android:id="@+id/dial_fragment"
+        android:name="com.der.ephone.fragments.DialedFragment"
+        android:label="fragment_dialpad"
+        tools:layout="@layout/fragment_dialpad" />
+    <fragment
+        android:id="@+id/contact_profile_fragment"
+        android:name="com.der.ephone.fragments.ContactProfileFragment"
+        android:label="fragment_contact_profile"
+        tools:layout="@layout/fragment_contact_profile" />
+</navigation>
